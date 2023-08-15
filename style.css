@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #b8b7b4, #dfa08f);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #fff;
+}
+
+header {
+    font-size: 1.5rem;
+    min-height: 20vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+form {
+    width: 90%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+form input,
+form button {
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    background: #fff;
+    color: #d88771;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    color: rgb(203, 240, 243);
+    background: #855143;
+}
+
+.todo-container {
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 2rem;
+}
+
+.todo {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    background: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: #222;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    display: grid;
+    align-items: center;
+}
+
+.fall {
+    transform: translateY(-8px) rotate(20deg);
+    opacity: 0;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #e25730;
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background: rgb(73, 204, 73);
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer button {
+    background: #ff6f47;
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.complete-filter {
+    background: rgb(73, 204, 73);
+}
+
+.all-filter {
+    background: rgb(73, 73, 204);
+}
